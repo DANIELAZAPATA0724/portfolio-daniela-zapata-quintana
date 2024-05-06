@@ -1,0 +1,41 @@
+<div class="container mx-auto px-8 lg:px-8 py-12 mt-10 flex flex-col lg:flex-row items-center justify-center">
+  <!-- Imagen -->
+  <div
+    class="flex justify-center lg:justify-start mb-3 lg:mb-0 lg:mr-8 transition-transform duration-300 ease-in-out hover:scale-110 ">
+    <img src="assets/img/danielazapata.webp" alt="Daniela Zapata"
+      class="w-64 h-auto rounded-full border-4 border-amber-950">
+  </div>
+  <!-- Texto y botones -->
+  <section class="text-center lg:text-left max-w-4xl text-amber-950">
+    <p class="text-7xl font-bold text-Ephesis text-[#224836]">Hola</p>
+    <h1 class="text-4xl font-bold text-Poppins ">Soy Daniela Zapata</h1>
+    <div class="sm:w-full sm:h-auto pt-3">
+      <p class="text-lg text-Poppins">Desarrolladora Web Full Stack Junior con enfoque en ciberseguridad y con formación
+        en Tecnología en Ingeniería Industrial especializada en Logística. <br> Mi objetivo es simple pero poderoso:
+        <span class="underline text-[#224836]">"crear soluciones web que no solo cautiven visualmente, sino que también
+          garanticen la seguridad de los usuarios."</span> <br> Con cada proyecto, fusiono mi creatividad con mi conocimiento
+        técnico para construir plataformas sólidas y confiables en un mundo digital cada vez más complejo y dinámico.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center lg:justify-start pt-5 space-x-1 flex-col lg:flex-row">
+      <button class="btn flex items-center mb-2 lg:mb-0"
+        (click)="openProjectLink('https://www.linkedin.com/in/danielazapataquintana/')">
+        <i class="fab fa-linkedin fa-2x"></i>
+        <span>LinkedIn</span>
+      </button>
+      <button class="btn flex items-center mb-2 lg:mb-0"
+        (click)="openProjectLink('https://github.com/DANIELAZAPATA0724')">
+        <i class="fab fa-github fa-2x"></i>
+        <span>GitHub</span>
+      </button>
+      <button class="btn flex items-center"
+        (click)="openProjectLink('https://drive.google.com/file/d/1fdvtU3eJc_xGPMmUdeFTvXaUsWgf2E5P/view?usp=sharing')">
+        <i class="fas fa-download fa-2x"></i>
+        <span>Descarga Mi CV</span>
+      </button>
+    </div>
+  </section>
+</div>
+<div>
+  <div class="divider ml-20 mr-20 "></div>
+</div>

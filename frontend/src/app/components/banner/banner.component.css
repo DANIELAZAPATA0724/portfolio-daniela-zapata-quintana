@@ -1,0 +1,25 @@
+/* banner.component.css */
+.banner {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Ephesis';
+  src: url('/assets/fonts/Ephesis/Ephesis-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+.text-Ephesis {
+  font-family: 'Ephesis', sans-serif;
+}
+
+.text-Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+

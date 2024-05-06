@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/frontend/src/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Poppins-Light';
+  src: url('/frontend/src/assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-family: 'Poppins-Regular';
+  src: url('/frontend/src/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Poppins-Italic';
+  src: url('/frontend/src/assets/fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+}
+

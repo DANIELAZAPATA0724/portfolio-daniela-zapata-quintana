@@ -1,0 +1,53 @@
+<div class="navbar bg-[#d3bca2] text-Poppins">
+  <div class="navbar-start">
+    <a href="/" class="flex items-center">
+      <img src="assets/img/logo-daniela-zapata..webp" alt="Logo Daniela Zapata" class="h-[5rem] w-(5rem)">
+    </a>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-hover mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52" *ngIf="showMenu">
+        <li><button class="btn-ghost" (click)="handleSectionClick('banner')">Sobre mí</button></li>
+        <li>
+          <button class="btn-ghost" (click)="handleSectionClick('skills')">Skills</button>
+          <ul class="text-sm w-[10rem]">
+            <li class="flex items-center" (click)="handleSectionClick('hardSkills')">
+              <i class="fas fa-laptop mr-2 flex-shrink-0">Hard Skills</i>
+            </li>
+            <li class="flex items-center" (click)="handleSectionClick('softSkills')">
+              <i class="fas fa-users mr-2 flex-shrink-0">Soft Skills</i>
+            </li>
+          </ul>
+        </li>
+        <li><button class="btn-ghost" (click)="handleSectionClick('projects')">Proyectos</button></li>
+        <li><button class="btn-ghost" (click)="handleSectionClick('experience')">Experiencia</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-lg">
+      <li><button class="btn-ghost" (click)="handleSectionClick('banner')">Sobre mí</button></li>
+      <li>
+        <details>
+          <summary><button class="btn-ghost">Skills</button></summary>
+          <ul class="text-sm w-[10rem]">
+            <li class="flex items-center" (click)="handleSectionClick('hardSkills')">
+              <i class="fas fa-laptop mr-2 flex-shrink-0">Hard Skills</i>
+            </li>
+            <li class="flex items-center" (click)="handleSectionClick('softSkills')">
+              <i class="fas fa-users mr-2 flex-shrink-0">Soft Skills</i>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li><button class="btn-ghost" (click)="handleSectionClick('projects')">Proyectos</button></li>
+      <li><button class="btn-ghost" (click)="handleSectionClick('experience')">Experiencia</button></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <button class="btn" (click)="navigateToBlog()">Ir a Mi Blog</button>
+  </div>
+</div>
