@@ -17,9 +17,9 @@ export class UsersService {
       repeatPassword: newUser.repeatPassword,
       email: newUser.email,
     };
-    return this.http.post('http://localhost:3001/auth/register', userData);
+    // return this.http.post('http://localhost:3001/auth/register', userData);
 
-    // return this.http.post('https://scoutify-secure-back.onrender.com/auth/register', userData); DAR EL LINK CUANDO TENGA EL CORRECTO DEL DESPLIEGUE
+    return this.http.post('https://portfolio-daniela-zapata-quintana.onrender.com/auth/register', userData);
   }
 
   loginUser(credentials: any): Observable<any> {
@@ -27,7 +27,7 @@ export class UsersService {
       username: credentials.username,
       password: credentials.password,
     };
-    return this.http.post('http://localhost:3001/auth/login', loginData);
-    // return this.http.post('https://scoutify-secure-back.onrender.com/auth/login', loginData);DAR EL LINK CUANDO TENGA EL CORRECTO DEL DESPLIEGUE
+    // return this.http.post('http://localhost:3001/auth/login', loginData);
+    return this.http.post('https://portfolio-daniela-zapata-quintana.onrender.com/auth/login', loginData);
   }
 }
